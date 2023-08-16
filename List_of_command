@@ -1,0 +1,11 @@
+   18  systemctl list-unit-files --type=service
+   19  systemctl disable blueman-mechanism.service 
+   20  systemctl disable bluetooth.service 
+   21  apt install libspa-0.2-modules=0.3.19-4
+   22  apt install libspa-0.2-bluetooth
+   23  apt purge pulseaudio-module-bluetooth
+   24  apt install pulseaudio-module-bluetooth
+   25  reboot
+   26  systemctl enable blueman-mechanism.service
+   27  systemctl enable bluetooth.service
+
